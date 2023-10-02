@@ -1,0 +1,200 @@
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #3a5a40;
+    color: seashell;
+
+}
+
+header{
+    height: 5.3125rem;
+    width: 100%;
+    position: fixed;
+    border-bottom: 0.15rem solid #020202;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: aliceblue;
+    z-index: 5;
+    opacity: 0.6;
+}
+
+.desktop{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+header img{
+    text-align: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: seashell;
+}
+
+h1{
+   font-family: 'Kalam', serif;
+   font-weight: bold;
+   font-size: 1.5rem;
+   color: #020202;
+}
+
+.desktop .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.desktop ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.desktop li{
+    padding: 0 1.3rem;
+    font-size: 1.2rem;
+}
+
+header .mobile{
+    display: none;
+}
+
+
+main{
+    position: relative;
+    top: 5.3125rem
+}
+
+.banner{
+    width: 100%;
+    height: 38rem;
+    text-align: center;
+    background-image: url(images/stock/huckster-V62UrdknDCA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: 25% 75%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1{
+    font-size: 3.5rem;
+    color: #010101;
+    background-color: rgba(163, 177, 138, 0.6);
+    width: 100%;
+    padding: 1rem;
+}
+
+.events{
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+.events h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+    color: #DAD7CD;
+}
+
+.events-images{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.events-images img{
+    width: 30%;
+    margin: 1.5%;
+    aspect-ratio: 4/3;
+}
+
+
+.quotes{
+    background-color: #588157;
+    color: #020202;
+    text-align: center;
+    padding: 5%;
+}
+
+.quotes h4{
+    margin-bottom: 1.2%;
+    font-size: 2rem;
+    font-family: 'Montserrat', serif;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.joinus{
+    font-size: 2rem;
+    text-align: center;
+    margin: 1.2%;
+}
+
+.joinus img{
+    width: 50%;
+    margin: 1.5%;
+
+}
+
+footer{
+    width: 100%;
+    background-color: #588157;
+    color: #020202;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7%;
+    align-items: center;
+    flex: 1 1;
+    font-size: 0.5rem;
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait){
+    .desktop li{
+        padding: 0 0.5rem;
+    }
+.events-images{
+    flex-direction: column;
+}
+
+    .events-images img{
+        width: 100%;
+        margin: 0.3%;
+    }
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait){
+    header .desktop{
+        display: none;
+    }
+    header .mobile{
+        display: block;
+        width: 100%;
+
+    }
+    .mobile ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1.2rem;
+    }
+    .mobile li{
+        padding: 0 1.3rem;
+    }
+    .banner h1{
+        font-size: 1.5rem;
+    }
+    .banner{
+        background-position: 50% 75%;
+        height: 19rem;
+    }
+
+}
